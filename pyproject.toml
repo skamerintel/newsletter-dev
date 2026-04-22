@@ -1,0 +1,12 @@
+[project]
+name = "newsletter-dev"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "google-auth>=2.49.0",
+    "google-genai>=1.66.0",
+    "ipython>=9.11.0",
+    "requests>=2.32.5",
+]

@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>AIDE Newsletter | {{WORK_WEEK}} {{YEAR}}</title>
+<!--[if mso]>
+<style type="text/css">
+  table { border-collapse: collapse; }
+  td { font-family: Segoe UI, Arial, sans-serif; }
+</style>
+<![endif]-->
+</head>
+<body style="margin: 0; padding: 0; background-color: #f4f5f7; font-family: 'Segoe UI', Arial, Helvetica, sans-serif; -webkit-font-smoothing: antialiased;">
+
+<!-- Outer wrapper -->
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color: #f4f5f7;">
+<tr>
+<td align="center" style="padding: 24px 16px;">
+
+<!-- Main content table, 640px max -->
+<table role="presentation" width="640" cellpadding="0" cellspacing="0" border="0" style="max-width: 640px; width: 100%; background-color: #ffffff; border-radius: 8px; overflow: hidden;">
+
+<!-- ============================================================ -->
+<!-- SECTION 1: Header / Banner                                   -->
+<!-- ============================================================ -->
+<!-- Banner image: replaced by build script with base64 data URI -->
+<tr>
+<td style="padding: 0; line-height: 0; font-size: 0;">
+  <img src="{{BANNER_IMAGE}}" alt="AIDE - AI for Dev/Ops Efficiency" width="640" style="display: block; width: 100%; max-width: 640px; height: auto; border: 0;">
+</td>
+</tr>
+<tr>
+<td style="background-color: #0f172a; padding: 20px 40px; text-align: center;">
+  <h1 style="margin: 0; font-size: 24px; font-weight: 700; color: #ffffff; letter-spacing: 0.5px;">AIDE Newsletter</h1>
+  <p style="margin: 6px 0 0 0; font-size: 14px; color: #94a3b8; letter-spacing: 0.3px;">{{WORK_WEEK}} {{YEAR}}</p>
+</td>
+</tr>
+
+<!-- ============================================================ -->
+<!-- SECTION 2: Mission / Intro                                   -->
+<!-- ============================================================ -->
+<tr>
+<td style="padding: 28px 40px 4px 40px;">
+  <!-- CONTENT: Replace with issue-specific intro -->
+  {{INTRO_CONTENT}}
+  <p style="margin: 0 0 2px 0; font-size: 14px; line-height: 1.5; color: #6b7280;">Steve Kamer</p>
+  <p style="margin: 0; font-size: 13px; line-height: 1.5; color: #9ca3af; font-style: italic;">AI Evangelist, AIDE Initiative</p>
+</td>
+</tr>
+
+<!-- ============================================================ -->
+<!-- SECTION 3: By The Numbers (optional per issue)               -->
+<!-- ============================================================ -->
+<tr>
+<td style="padding: 16px 40px 20px 40px;">
+  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color: #f0f7ff; border-radius: 6px;">
+  <tr>
+    <td width="33%" align="center" style="padding: 20px 0;">
+      <span style="display: block; font-size: 36px; font-weight: 700; color: #0068b5; line-height: 1.1;">{{STAT_1_NUMBER}}</span>
+      <span style="display: block; font-size: 11px; text-transform: uppercase; letter-spacing: 1px; color: #6b7280; margin-top: 4px;">{{STAT_1_LABEL}}</span>
+    </td>
+    <td width="33%" align="center" style="padding: 20px 0; border-left: 1px solid #dbeafe; border-right: 1px solid #dbeafe;">
+      <span style="display: block; font-size: 36px; font-weight: 700; color: #0068b5; line-height: 1.1;">{{STAT_2_NUMBER}}</span>
+      <span style="display: block; font-size: 11px; text-transform: uppercase; letter-spacing: 1px; color: #6b7280; margin-top: 4px;">{{STAT_2_LABEL}}</span>
+    </td>
+    <td width="33%" align="center" style="padding: 20px 0;">
+      <span style="display: block; font-size: 36px; font-weight: 700; color: #0068b5; line-height: 1.1;">{{STAT_3_NUMBER}}</span>
+      <span style="display: block; font-size: 11px; text-transform: uppercase; letter-spacing: 1px; color: #6b7280; margin-top: 4px;">{{STAT_3_LABEL}}</span>
+    </td>
+  </tr>
+  </table>
+</td>
+</tr>
+
+<!-- ============================================================ -->
+<!-- GENERIC SECTION TEMPLATE (copy for each content section)     -->
+<!--                                                              -->
+<!-- Section with icon + header:                                  -->
+<!--                                                              -->
+<!-- <tr>                                                         -->
+<!-- <td style="padding: 16px 40px 8px 40px;">                   -->
+<!--   <table role="presentation" width="100%"                    -->
+<!--     cellpadding="0" cellspacing="0" border="0">             -->
+<!--   <tr><td style="border-top: 2px solid #0068b5;             -->
+<!--     font-size: 0; line-height: 0;">&nbsp;</td></tr>         -->
+<!--   </table>                                                   -->
+<!-- </td>                                                        -->
+<!-- </tr>                                                        -->
+<!--                                                              -->
+<!-- <tr>                                                         -->
+<!-- <td style="padding: 20px 40px 8px 40px;">                   -->
+<!--   <table role="presentation" width="100%"                    -->
+<!--     cellpadding="0" cellspacing="0" border="0">             -->
+<!--   <tr>                                                       -->
+<!--     <td width="100" valign="middle"                          -->
+<!--       style="padding-right: 16px;">                          -->
+<!--       <img src="{{SECTION_IMAGE}}" alt="" width="100"        -->
+<!--         style="display: block; width: 100px;                 -->
+<!--         height: auto; border: 0;">                           -->
+<!--     </td>                                                    -->
+<!--     <td valign="middle">                                     -->
+<!--       <h2 style="margin: 0; font-size: 22px;                -->
+<!--         font-weight: 700; color: #0068b5;                   -->
+<!--         text-transform: uppercase;                           -->
+<!--         letter-spacing: 0.5px;">SECTION TITLE</h2>           -->
+<!--     </td>                                                    -->
+<!--   </tr>                                                      -->
+<!--   </table>                                                   -->
+<!-- </td>                                                        -->
+<!-- </tr>                                                        -->
+<!--                                                              -->
+<!-- Section body text:                                           -->
+<!--                                                              -->
+<!-- <tr>                                                         -->
+<!-- <td style="padding: 4px 40px 24px 40px;">                   -->
+<!--   <p style="margin: 0; font-size: 15px;                     -->
+<!--     line-height: 1.65; color: #374151;">                     -->
+<!--     Your content here.</p>                                   -->
+<!-- </td>                                                        -->
+<!-- </tr>                                                        -->
+<!--                                                              -->
+<!-- Testimonial card (blue border = tier 1):                     -->
+<!--                                                              -->
+<!-- <tr>                                                         -->
+<!-- <td style="padding: 4px 40px 20px 40px;">                   -->
+<!--   <table role="presentation" width="100%"                    -->
+<!--     cellpadding="0" cellspacing="0" border="0">             -->
+<!--   <tr>                                                       -->
+<!--     <td style="border-left: 3px solid #0068b5;              -->
+<!--       padding-left: 16px;">                                  -->
+<!--       <p style="margin: 0 0 6px 0; font-size: 12px;        -->
+<!--         font-weight: 700; text-transform: uppercase;        -->
+<!--         letter-spacing: 0.8px;                               -->
+<!--         color: #0068b5;">TEAM NAME</p>                       -->
+<!--       <p style="margin: 0; font-size: 14px;                -->
+<!--         line-height: 1.65; color: #374151;                  -->
+<!--         font-style: italic;">                                -->
+<!--         &ldquo;Quote text&rdquo;</p>                         -->
+<!--     </td>                                                    -->
+<!--   </tr>                                                      -->
+<!--   </table>                                                   -->
+<!-- </td>                                                        -->
+<!-- </tr>                                                        -->
+<!--                                                              -->
+<!-- Border colors by tier:                                       -->
+<!--   Tier 1: #0068b5 (Intel blue)                               -->
+<!--   Tier 2: #6b7280 (gray)                                     -->
+<!--   Tier 3: #d1d5db (light gray)                               -->
+<!--                                                              -->
+<!-- Bullet point list:                                           -->
+<!--                                                              -->
+<!-- <table role="presentation" width="100%"                      -->
+<!--   cellpadding="0" cellspacing="0" border="0">               -->
+<!--   <tr>                                                       -->
+<!--     <td style="padding: 0 0 6px 0; font-size: 14px;        -->
+<!--       line-height: 1.6; color: #374151;">                   -->
+<!--       &bull;&ensp;<strong style="color: #0068b5;">           -->
+<!--       Bold item</strong> &mdash; description</td>            -->
+<!--   </tr>                                                      -->
+<!-- </table>                                                     -->
+<!--                                                              -->
+<!-- CTA button (centered):                                       -->
+<!--                                                              -->
+<!-- <tr>                                                         -->
+<!-- <td align="center" style="padding: 0 40px 12px 40px;">      -->
+<!--   <table role="presentation" width="340"                     -->
+<!--     cellpadding="0" cellspacing="0" border="0"              -->
+<!--     style="width: 340px;">                                   -->
+<!--   <tr>                                                       -->
+<!--     <td align="center"                                       -->
+<!--       style="background-color: #0068b5;                     -->
+<!--       border-radius: 6px;">                                  -->
+<!--       <a href="URL" target="_blank"                          -->
+<!--         style="display: block; padding: 12px 28px;          -->
+<!--         font-size: 14px; font-weight: 600;                  -->
+<!--         color: #ffffff; text-decoration: none;               -->
+<!--         letter-spacing: 0.3px;                               -->
+<!--         text-align: center;">Button Text</a>                 -->
+<!--     </td>                                                    -->
+<!--   </tr>                                                      -->
+<!--   </table>                                                   -->
+<!-- </td>                                                        -->
+<!-- </tr>                                                        -->
+<!-- ============================================================ -->
+
+<!-- CONTENT SECTIONS GO HERE -->
+<!-- Use the building blocks above to assemble each issue -->
+
+{{CONTENT_SECTIONS}}
+
+<!-- ============================================================ -->
+<!-- FOOTER                                                       -->
+<!-- ============================================================ -->
+<tr>
+<td style="padding: 20px 40px 24px 40px; background-color: #f9fafb;">
+  <p style="margin: 0; font-size: 12px; line-height: 1.5; color: #9ca3af; text-align: center; font-style: italic;">AIDE Newsletter | {{WORK_WEEK}} {{YEAR}}</p>
+</td>
+</tr>
+
+</table>
+<!-- End main content table -->
+
+</td>
+</tr>
+</table>
+<!-- End outer wrapper -->
+
+</body>
+</html>
